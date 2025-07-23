@@ -5,7 +5,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build:css": "tailwindcss -i ./src/input.css -o ./public/dist/output.css --watch",
-    "build:ts": "npx tsc --watch"
+    "build:ts": "npx tsc --watch",
+    "dev": "npm run build:css"
   },
   "keywords": [],
   "author": "",
