@@ -1,18 +1,21 @@
 // src/components/Navbar.tsx
 
+import ThemeDropdown from './ThemeDropdown';
+
 const Navbar = () => {
   return (
-    <nav className="bg-gray-800 text-white p-4">
+    <nav className="bg-base-200 text-base-content p-4">
       <div className="container mx-auto flex justify-between items-center">
-        {/* Logo or Website Name */}
-        <div className="text-2xl font-bold">Quantum Ledger AI</div>
+        <div className="flex items-center space-x-4">
+          <ThemeDropdown />
+          <div className="text-2xl font-bold">Quantum Ledger AI</div>
+        </div>
 
-        {/* Navigation Links */}
         <ul className="flex space-x-6">
-          <li><a href="#" className="hover:text-gray-300">Home</a></li>
-          <li><a href="#" className="hover:text-gray-300">About</a></li>
-          <li><a href="#" className="hover:text-gray-300">Services</a></li>
-          <li><a href="#" className="hover:text-gray-300">Contact</a></li>
+          <li><a href="#" className="btn btn-ghost hover:bg-[oklch(81%_0.111_293.571)]">Home</a></li>
+          <li><a href="#" className="btn btn-ghost hover:bg-[oklch(81%_0.111_293.571)]">About</a></li>
+          <li><a href="#" className="btn btn-ghost hover:bg-[oklch(81%_0.111_293.571)]">Services</a></li>
+          <li><a href="#" className="btn btn-ghost hover:bg-[oklch(81%_0.111_293.571)]">Contact</a></li>
         </ul>
       </div>
     </nav>
