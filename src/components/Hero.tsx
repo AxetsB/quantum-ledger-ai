@@ -2,8 +2,10 @@
 
 const Hero = () => {
   return (
-    <section className="py-20 px-4">
-      <div className="container mx-auto text-center">
+    <section 
+     className="relative px-4 min-h-screen flex items-center"
+    >
+      <div className="container mx-auto text-center relative z-10">
         <h1 className="text-5xl font-bold">
           AI-Powered Automation for Financial Excellence
         </h1>

@@ -1,13 +1,13 @@
 @import "tailwindcss";
 
 @plugin "daisyui" {
-  themes: light --default, dark --prefersdark, quantum --default;
+  themes: light, dark --prefersdark, quantum --default;
 }
 
 @plugin "daisyui/theme" {
   name: "quantum";
   color-scheme: "light";
-  --color-base-100: oklch(28% 0.141 291.089);
+  --color-base-100: oklch(25% 0.09 281.288);
   --color-base-200: oklch(37% 0.034 259.733);
   --color-base-300: oklch(0% 0 0);
   --color-base-content: oklch(98% 0.003 247.858);
@@ -37,4 +37,10 @@
   --noise: 0;
   --color-navbar-bg: oklch(81% 0.111 293.571);
   --color-navbar-text: oklch(0% 0 0);
+}
+
+/* New rule to change dropdown text color based on theme */
+html[data-theme="quantum"] .dropdown-menu-text,
+html[data-theme="dark"] .dropdown-menu-text {
+  color: white;
 }
